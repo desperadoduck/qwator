@@ -31,9 +31,11 @@ public:
     ~Ocean();
     QPoint normalize(const QPoint& pos);
     void turn();
+    void removeAll();
     LifeForm* getLifeForm(const QPoint& pos);
     void setLifeForm(const QPoint& pos, LifeForm* lifeform);
     void removeLifeForm(const QPoint& pos);
+    QPoint getOceanSize();
     QString renderAsText();
 private:
     LifeForm** m_array;

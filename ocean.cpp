@@ -87,3 +87,17 @@ void Ocean::removeLifeForm(const QPoint& pos) {
     delete m_array[elemnr];
     m_array[elemnr]=NULL;
 }
+
+QPoint Ocean::getOceanSize() {
+    return m_size;
+}
+
+void Ocean::removeAll() {
+    int elemcnt=m_size.x()*m_size.y();
+    for (int i=0; i<elemcnt ; i++) {
+        if (m_array[i]) {
+            delete m_array[i];
+            m_array[i]=NULL;
+        }
+    }
+}

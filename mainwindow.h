@@ -28,9 +28,12 @@ public:
 public slots:
     void turn();
     void showLicense();
+    void reset();
+    void pause();
 private:
     QTimer *timer;
     Ui_MainWindow* m_umw;
+    int turnInterval;
 };
 
 #endif

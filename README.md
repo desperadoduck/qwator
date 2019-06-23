@@ -21,4 +21,6 @@ The graphics are Copyright 2019 by Twitter, Inc and other contributors  and are 
 They have been taken from the [Twemoji project](https://twemoji.twitter.com/). For more details see also 
 images/twemoji/README.txt .
 
-
+If you plan to run on webassembly, use at least a stripped down Qt library. There may be licensing issues lurking when putting the
+resulting binary on a public server. See: https://github.com/desperadoduck/qwator/issues/1 . 
+At the moment, there is no final recommendation on how to avoid these issues, so you should check for yourself, if every requirement is fulfilled (and ideally document that in the issue, so that everybody can learn from that).
